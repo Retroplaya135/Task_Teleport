@@ -65,3 +65,11 @@ TaskTeleport/
 ```
 python -m spacy download en_core_web_sm
 ```
+
+# Running the Service
+
+Run the FastAPI application with Uvicorn:
+
+```
+uvicorn task_teleport.main:app --reload
+```
