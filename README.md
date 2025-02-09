@@ -60,3 +60,8 @@ TaskTeleport/
 ```
    pip install -r requirements.txt
 ```
+
+4. Download the spaCy English model:
+```
+python -m spacy download en_core_web_sm
+```
