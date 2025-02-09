@@ -92,3 +92,29 @@ Accepts a JSON payload with a description field (the project description) and re
 decomposed_tasks: The list of tasks extracted.
 scheduled_tasks: Each task with a scheduled time and priority.
 automatable_tasks: The subset of tasks flagged as automatable.
+
+
+# Future Enhancements
+
+```
+Calendar Integration:
+```
+
+Integrate with real calendar APIs (Google Calendar, Outlook) for dynamic scheduling.
+
+```
+Enhanced NLP:
+```
+
+Improve task decomposition with more advanced NLP techniques.
+
+```
+Interactive Front End:
+```
+
+Develop a web-based front end for interactive task management.
+
+```
+Advanced Automation Detection:
+```
+Expand automation detection using custom machine learning models.
