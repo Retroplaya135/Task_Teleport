@@ -20,3 +20,16 @@ This service is implemented as a FastAPI application and is designed to be deplo
 ---
 
 ## Repository Structure
+
+```
+TaskTeleport/ 
+├── README.md 
+├── requirements.txt 
+├── LICENSE 
+  └── task_teleport/ 
+  ├── init.py 
+  ├── main.py 
+  ├── nlp.py 
+  ├── scheduler.py 
+  └── automation.py
+```
