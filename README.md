@@ -73,3 +73,22 @@ Run the FastAPI application with Uvicorn:
 ```
 uvicorn task_teleport.main:app --reload
 ```
+
+The API will be available at http://127.0.0.1:8000. Visit http://127.0.0.1:8000/docs for the interactive Swagger UI.
+
+API Endpoints
+
+```
+GET 
+```
+
+Returns a welcome message.
+
+```
+POST /process
+```
+
+Accepts a JSON payload with a description field (the project description) and returns:
+decomposed_tasks: The list of tasks extracted.
+scheduled_tasks: Each task with a scheduled time and priority.
+automatable_tasks: The subset of tasks flagged as automatable.
