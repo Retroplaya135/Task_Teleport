@@ -33,3 +33,20 @@ TaskTeleport/
   ├── scheduler.py 
   └── automation.py
 ```
+
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.7+
+- [spaCy](https://spacy.io/) (with the English model)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/TaskTeleport.git
+   cd TaskTeleport
