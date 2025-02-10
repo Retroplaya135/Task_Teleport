@@ -21,6 +21,8 @@ This service is implemented as a FastAPI application and is designed to be deplo
 
 #Architectural Diagram 
 
+```
+
                 +----------------------+
                 |     End User         |
                 | (Browser/HTTP Client)|
@@ -52,6 +54,7 @@ This service is implemented as a FastAPI application and is designed to be deplo
                 +----------------------+
 
 
+```
 ## Repository Structure
 
 ```
