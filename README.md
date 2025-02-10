@@ -54,6 +54,7 @@ This service is implemented as a FastAPI application and is designed to be deplo
                 +----------------------+
 
 
+
 ```
 ## Repository Structure
 
@@ -70,6 +71,54 @@ TaskTeleport/
   └── automation.py
 ```
 
+
+```
++------------------------------+
+|  User submits project        |
+|  description via POST        |
+|  /process endpoint           |
++--------------+---------------+
+               |
+               v
++------------------------------+
+| FastAPI endpoint receives    |
+| the request                  |
++--------------+---------------+
+               |
+               v
++------------------------------+
+| NLP Module:                  |
+| decompose_project()          |
+| (Extract actionable tasks)   |
++--------------+---------------+
+               |
+               v
++------------------------------+
+| Scheduler Module:            |
+| schedule_tasks()             |
+| (Assign priorities &         |
+|  schedule times)             |
++--------------+---------------+
+               |
+               v
++------------------------------+
+| Automation Module:           |
+| identify_automatable_tasks() |
+| (Flag tasks for automation)  |
++--------------+---------------+
+               |
+               v
++------------------------------+
+| Aggregate results and create |
+| JSON response                |
++--------------+---------------+
+               |
+               v
++------------------------------+
+| Return JSON response to user |
++------------------------------+
+
+```
 
 ---
 
