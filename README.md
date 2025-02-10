@@ -19,6 +19,39 @@ This service is implemented as a FastAPI application and is designed to be deplo
 
 ---
 
+#Architectural Diagram 
+
+                +----------------------+
+                |     End User         |
+                | (Browser/HTTP Client)|
+                +----------------------+
+                           |
+                           v
+                +----------------------+
+                |    FastAPI Service   |
+                |   (Uvicorn Server)   |
+                +----------------------+
+                           |
+          +----------------+----------------+
+          |                |                |
+          v                v                v
++----------------+  +----------------+  +----------------+
+|   NLP Module   |  | Scheduler      |  | Automation     |
+|   (nlp.py)     |  | (scheduler.py) |  | (automation.py)|
++----------------+  +----------------+  +----------------+
+                           |
+                           v
+                +----------------------+
+                | JSON Response Output |
+                +----------------------+
+                           |
+                           v
+                +----------------------+
+                |     End User         |
+                | (Display Results)    |
+                +----------------------+
+
+
 ## Repository Structure
 
 ```
